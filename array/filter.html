@@ -1,0 +1,14 @@
+<script>
+    var ages = [20,40,50,1];
+    document.write(ages + "<br><br>");
+
+
+    var b = ages.filter(checkAdult);
+    document.write(b + "<br><br>");
+
+    function checkAdult(age){
+
+        return age>=20;
+    }
+
+</script>

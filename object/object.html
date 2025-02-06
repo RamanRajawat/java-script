@@ -1,0 +1,44 @@
+<script>
+
+    let a ={
+
+        fname: "Raman" ,
+        lname: "Rajawat" ,
+        age: 23 ,
+        email: 'ramanrajawat9754@gmail.com' ,
+
+        favMovies: ['dhoom', 'sholay', 'Hum'],  //object array
+
+        // ek aur object ke andar object //
+        living : {
+
+            city : 'Gwalior' ,
+            country : 'India' 
+
+        },
+        salary: function () {  // function 
+
+            return 25000;
+        },
+
+        fullname : function () {
+
+            //fname = "raj" //local
+            // return this.fname + " " + this.lname;  
+            return this.fname
+        }
+
+
+
+    }   // end object //
+
+    document.write(a.fullname())
+    // document.write(JSON.stringify(a)) 
+    document.write(a.fname, "<br>");
+    // document.write(a.fullname())
+
+
+    console.log(a);
+    
+
+</script>
